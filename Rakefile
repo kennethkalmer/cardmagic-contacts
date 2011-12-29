@@ -4,6 +4,8 @@ require 'rake/testtask'
 require 'rake/rdoctask'
 require 'rake/gempackagetask'
 require 'rake/contrib/rubyforgepublisher'
+
+$:.unshift File.dirname(__FILE__) unless $:.include? File.dirname(__FILE__)
 require 'lib/contacts'
 
 PKG_VERSION = Contacts::VERSION
